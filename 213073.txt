@@ -1,0 +1,56 @@
+Креирав мој github profil dimestojanov
+Исто така името на гранката од main го променив во master
+Почнав со правење на репозиториум и надоле ќе ги напишам во хронолошки редослед сите команди што ги користев
+Надоле во командите повеќе пати ќе користам git status, и git log, за да видам дали во текот на извршување имам направено некоја грешка и дали е се во ред, со git status си проверувам дали некој фајл е untrecked или пак во стејџинг
+А пак додека со git log ги проверувам логовите и дали се е како што треба
+$ mkdir SI_2023_lab1_213073
+$ cd SI_2023_lab1_213073
+$ git init
+$ nano README.md
+$ git add .
+$ git commit -m "Initial commit"
+$ git remote add origin https://github.com/dimestojanov/-SI_2023_lab1_213073.git
+$ git push -u master origin
+$ git remote -v    - овде проверувам дали сум успешно поврзан со github
+$ nano SILab1.java    - овде креирам фајл и внатре ставам код кој подоцна ќе поправам грешки во него преку други гранки, исто така надоле повеќе пати ја имам искористено и nano командата кога правам нови фајлови или пак кога влевам во нив за да сменам нешто по потреба
+$ git add .
+$ git status
+$ git commit -m "Add java class"
+$ git log
+$ git push 
+$ git branch bug1      Овде креирам 3 гранки од мастер 
+$ git branch bug2   
+$ git branch bug3
+$ git checkout bug1       Подоле повеќе пати ја користам командата checkout и со неа се префрлам од една гранка на друга
+$ nano SILab1.java
+$ git add .
+$ git commit -m "Fix wrong loop for reading"      со оваа команда правам commit и воедно додавам коментар 
+$ git log
+$ git checkout master
+$ log
+$ git checkout bug2
+$ nano SILab1.java
+$ git add .
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+$ git log
+$ git checkout master
+$ git log
+$ git checkout bug3
+$ nano SILab1.java
+$ git add .
+$ git commit -m "Fix method sumEvenNumbers"
+$ git log
+$ git checkout master
+$ git merge bug1           овде правам merge на гранката bug1 кон гранката master
+$ git merge bug2           овде праван merge на гранката bug2 кон гранката master
+$ git checkout bug3       
+$ git rebase master        овде правам rebase на гранката bug3 спрема master
+$ git checkout master
+$ git merge bug3           овде исте merge
+$ git push --all origin    со оваа команда правам push на сите гранки
+$ git log
+$ nano logs.txt
+$ git add .
+$ git commit -m "Final commit"
+$ git push origin master
+За некој команди нема коментар од моја страна бидејќи имам веќе  наведено што правам со командите некаде погоре во текстот за да не пишам повторно за сите команди.
